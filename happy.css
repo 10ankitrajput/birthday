@@ -1,0 +1,77 @@
+body{
+    background-color: grey;
+}
+
+.animation_text {
+    overflow: hidden;
+}
+
+.animation_text .text {
+    position: relative;
+    color: #ff0000;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.animation_text .text.fir-text {
+    color: rgb(213, 72, 72);
+    -webkit-animation: colorchange 5s infinite;
+    text-align: center;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    border-left: 2px solid grey;
+    animation: animate 5s steps(14) infinite;
+}
+
+@keyframes animate {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: blueviolet;
+        font-style: normal;
+    }
+
+    20% {
+        color: yellow;
+        font-style: italic;
+    }
+
+    40% {
+        color: greenyellow;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    60% {
+        color: rebeccapurple;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    80% {
+        color: palegreen;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    100% {
+        color: plum;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
+

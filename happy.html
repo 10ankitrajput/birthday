@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="happy.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded-full border-inherit" alt="hero" src="dev3.jpg">
+          <div class="text-center lg:w-2/3 w-full">
+            <div class="animation_text" id="main">
+                <span class="text fir-text">Happy Birthday</span>
+                <span class="text sec-text">Ankit Rajput</span>
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <script>
+        const text = document.querySelector(".sec-text");
+
+        const textload = () => {
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 0);
+
+            setTimeout(() => {
+                text.textContent = "DEV";
+            }, 4000);
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 8000);
+            setTimeout(() => {
+                text.textContent = "DEV";
+            }, 12000);
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 16000);
+            setTimeout(() => {
+                text.textContent = "DEV";
+            }, 20000);
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 24000);
+            setTimeout(() => {
+                text.textContent = "DEV";
+            }, 28000);
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 32000);
+            setTimeout(() => {
+                text.textContent = "DEV";
+            }, 36000);
+
+            setTimeout(() => {
+                text.textContent = "TRINABH";
+            }, 40000);
+        }
+
+        textload();
+        setInterval(textoad, 44000)
+    </script>
+</body>
+</html>
